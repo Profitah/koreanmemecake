@@ -1,4 +1,4 @@
-.slidebar_wrapp{
+.liner{
     margin: 0 auto;
     background-color: cornflowerblue;
     max-width: 10em;
@@ -6,17 +6,35 @@
     padding: 50px;
 
 }
-.slidebar{
+.inner{
     margin: 0 auto;
     width: 8em;
     height: 8em;
-    border: solid 3px color lightgray;
     background-color: white;
     border-radius: 50%;
     padding: 10px;
 }
 
-.slidebar_wrapp::before{
-    content: "";
-    background-color: green;
+.liner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px; 
+    height: 100%; 
+    background-color: lightgray; 
+    transform-origin: 50% 0;
+}
+
+.liner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px; 
+    height: 100%; 
+    background-color: lightgray; 
+    transform-origin: 50% 0;
 }
