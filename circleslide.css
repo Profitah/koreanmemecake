@@ -1,0 +1,22 @@
+.slidebar_wrapp{
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    max-width: 10em;
+    border-radius: 50%;
+    padding: 50px;
+
+}
+.slidebar{
+    margin: 0 auto;
+    width: 8em;
+    height: 8em;
+    border: solid 3px color lightgray;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.slidebar_wrapp::before{
+    content: "";
+    background-color: green;
+}
